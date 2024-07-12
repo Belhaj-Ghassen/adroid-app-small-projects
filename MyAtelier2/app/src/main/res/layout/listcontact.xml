@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListContact">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:background="@color/design_default_color_primary_dark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="@color/white"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="liste des contact"
+            android:textAlignment="center"
+            android:textColor="#2A2A80"
+            android:textSize="34sp"
+            tools:layout_marginBottom="80dp"
+            tools:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+
+            <!-- TextView 1 -->
+            <TextView
+                android:id="@+id/idTVContactName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Contact Name"
+                android:textColor="@color/black" />
+
+            <!-- TextView 2 -->
+            <TextView
+                android:id="@+id/idTVContactTel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Tel"
+                android:textColor="@color/black" />
+
+            <!-- TextView 3 -->
+            <TextView
+                android:id="@+id/idTVContactEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Email"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
